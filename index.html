@@ -8,31 +8,34 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <meta name="Trabalho de Css" description="Trabalho de Css Carlão Pelegrin :)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin=false>
+    <link target="_blank" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <div class="container">
         <h1>TRABALHO DE CSS</h1>
         <nav>
-
+            <div id="links">
+                <a href="#sql-injection">SQL Injection</a>
+                <a href="#dependencias-infectadas">Dependências Infectadas</a>
+                <a href="#copiar-codigos">Copiar Códigos</a>
+                <a href="#codigos-erro">Códigos Erro</a>
+            </div>
         </nav>  
-        <div id="links">
-
-        </div>
     </div>
     <main>
         <section id="sql-injection" class="">
             <figure>
-                <img src="https://picsum.photos/id/199/360/360" alt="Caminho de madeira em uma praia, com o mar azul ao fundo">
-                <figcaption>Imagem bonita</figcaption>
+                <img src="/assets/img/sql-injection.png" alt="Caminho de madeira em uma praia, com o mar azul ao fundo">
+                <figcaption>Mais um dia, mais um sistema que não escapou <strong>os dados do formulário...</strong></figcaption>
             </figure>
             <article>
                 <h2 class="title">SQL Injection</h2>
                 <div class="text">
                     <p>SQL injection é uma vulnerabilidade que se aproveita de falta de <strong>sanização</strong> ou <strong>escape</strong> para execução de códigos arbitrários diretamente no banco de dados.</p>
+                    <a target="_blank" href="https://www.devmedia.com.br/sql-injection/6102" class="btn">Ver mais</a>
                 </div>
                 <div class="tooltip">
 
@@ -40,28 +43,32 @@
             </article>
         </section>
 
-        <section id="dependencias-infectadas" class="" >
+        <section id="dependencias-infectadas" class="">
             <article>
                 <h2 class="title">Dependências Maliciosas</h2>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam!</p>
+                    <p>Na maioria dos casos, utilizam-se códigos de terceiros como base para o desenvolvimento de aplicações. </p>
+                    <p>Entretanto, em alguns casos, falhas de segurança são inseridas propositalmente nessas biblioteca ou estas são comprometidas, resultando em graves falhas de segurança.</p>
+                    <a target="_blank" href="https://nakedsecurity.sophos.com/2021/03/07/poison-packages-supply-chain-risks-user-hits-python-community-with-4000-fake-modules" class="btn">Ver mais</a>
                 </div>
             </article> 
             <figure>
-                <img src="https://picsum.photos/id/199/360/360" alt="">
-                <figcaption>Imagem bonita</figcaption>
+                <img src="/assets/img/package.png" alt="Caixa de papelão aberta">
+                <figcaption>Esse pacote vem com um <em>presentinho especial...</em></figcaption>
             </figure>
         </section>
 
         <section id="copiar-codigos" class="">
             <figure>
-                <img src="https://picsum.photos/id/199/360/360" alt="">
-                <figcaption>Imagem bonita</figcaption>
+                <img src="/assets/img/keyboard.png" alt="Teclas com os botões CTRL+C e CTRL+V">
+                <figcaption>Ah, mas sem o StaOverflow eu <strong>NÃO CONSIGO PROGRAMAR!</strong><figcaption>
             </figure>
             <article>
-                <h2 class="title">Cópia desenfreada</h2>
+                <h2 class="title">Cópia de códigos</h2>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam!</p>
+                    <p>A cópia de trechos de códigos da internet é uma prática comum no mercado de programação. Entretanto, essa ação pode trazer diversos problemas no quesito segurança da aplicação desenvolvida.</p>
+                    <p>Os principais problemas são: licenciamento do código (direitos autorais), introdução de novos bugs e falhas de segurança (deliberadas ou não).</p>
+                    <a target="_blank" href="https://blogs.grammatech.com/the-dangers-of-copy-and-paste#:~:text=Most%20developers%20would%20agree%20that,use%20and%20lack%20of%20forethought." class="btn">Ver mais</a>
                 </div>
             </article> 
         </section>
@@ -70,28 +77,43 @@
             <article>
                 <h2 class="title">Erros publicamente disponíveis</h2>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam!</p>
+                    <p>O tratamento de erro de forma imprópria pode revelar a um atacante informações preciosas para comprometimento da aplicação.</p>
+                    <p>Além, disso há o agravante de que, em alguns casos, essas mensagens podem revelar trechos do código fonte ou outras informações sensíveis como tokens no stacktrace (componentes do erro) para o usuário.</p>
+                    <a target="_blank" href="https://owasp.org/www-community/Improper_Error_Handling" class="btn">Ver mais</a>
                 </div>
             </article> 
             <figure>
-                <img src="https://picsum.photos/id/199/360/360" alt="">
-                <figcaption>Imagem bonita</figcaption>
+                <img src="/assets/img/application.png" alt="Tela de um sistema com um inseto (bug) no canto inferior direito.">
+                <figcaption>Puts, esqueci o DEBUG ativado em produção!</figcaption>
             </figure>
-        </section>
-        <section id="buffer-overflow" class="">
-            <figure>
-                <img src="https://picsum.photos/id/199/360/360" alt="">
-                <figcaption>Imagem bonita</figcaption>
-            </figure>
-            <article>
-                <h2 class="title">Buffer Overflow</h2>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam!</p>
-                </div>
-            </article> 
         </section>
     </main>
 
+    <div id="profile">
+        <figure>
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGQTqEqL8SjQQ/profile-displayphoto-shrink_200_200/0/1617070229320?e=1654732800&v=beta&t=NOzLXvyw9_bbm9vFnB7XeWmVMM_IMkHU47sh40mNdLM" alt="">
+            <figcaption>Vinicius Santana
+                <br>
+                <a href="https://github.com/vincipy" class="github">Github</a>
+            </figcaption>
+            
+        </figure>
+        <figure>
+            <img src="https://nathabonfim59.com/wp-content/uploads/2021/01/nathanael-bonfim-profile-300x300.jpg" alt="">
+            <figcaption>
+                Nathanael Bonfim
+                <br>
+                <a href="http://github.com/nathabonfim59" class="github">Github</a> 
+            </figcaption>
+        </figure>
+    </div>
+
+    <form action="https://s5vktvsxzf.execute-api.us-east-1.amazonaws.com/default/cssPelegrin">
+        <label for=""></label>
+        <input type="text" id="contact-email" name="contact-email" placeholder="Digite seu email">
+        <input type="submit">
+    </form>
+    
     <footer>
         <div class="social">
             <i class="fa-brands fa-linkedin"></i>
